@@ -1,27 +1,22 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int get_height(void);
 void print_raw(int num, char symbol);
 
 int main()
 {
     int height;
-    int brick;
-    int space;
 
     // Get height
-    do
-    {
-        height = get_int("Height: ");
-    }
-    while (height < 1);
+    height = get_height();
 
     // Print brick
     for (int i = 0; i < height; i++)
     {
         // space + brick == height
-        brick = i + 1;
-        space = height - i - 1;
+        int brick = i + 1;
+        int space = height - i - 1;
 
         // print space, brick, two space, brick and next line
         print_raw(space, ' ');
@@ -30,6 +25,17 @@ int main()
         print_raw(brick, '#');
         printf("\n");
     }
+}
+
+int get_height(void)
+{
+    int h;
+    do
+    {
+        h = get_int("Height: ");
+    } 
+    while (h < 1);
+    return h;
 }
 
 void print_raw(int num, char symbol)
