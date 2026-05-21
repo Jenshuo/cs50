@@ -46,8 +46,10 @@ Lecture1_C/source_code/compare1
 Lecture1_C/source_code/compare2
 Lecture1_C/source_code/compare3
 
-# Mario_more compiled binary
+# Problem Set compiled binaries
 Lecture1_C/Problem_Set1/Mario_more/mario
+Lecture1_C/Problem_Set1/cash/cash
+Lecture1_C/Problem_Set1/credit/credit
 
 # libcs50 compiled outputs
 libcs50-11.0.3/build/lib/
