@@ -20,7 +20,6 @@ int main(void)
 
     // Calculate Luhn algo. and digit count
     card_info = luhn_algo(card_num);
-    // printf("Luhn sum = %d, digit_count = %d\n", card_info.luhn_sum, card_info.digit_count);
 
     // Check valid or not and type of credit
     if (card_info.luhn_sum % 10 != 0)
@@ -64,7 +63,7 @@ CardInfo luhn_algo(long card_num)
     {
 
         // Get 40
-        if ((card_num / 100 == 0) && (card_num / 10 > 0))
+        if ((card_num >= 10) && (card_num <= 99))
         {
             info.start_two_digit = card_num;
         }
@@ -90,6 +89,7 @@ CardInfo luhn_algo(long card_num)
             // add 4*2 + 0*2 + 0*2 + 0*2 + 6*2 + 0*2 + 4*2
             // because 6*2 = 12 => split to 1 and 2 => + 1 + 2
             int digit_mul2 = digit * 2;
+            // sum += digit_mul2 % 10 + digit_mul2 / 10; (max value = 9*2 = 18)
             while (digit_mul2 > 0)
             {
                 sum += digit_mul2 % 10;
