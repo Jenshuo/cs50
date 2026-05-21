@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+
+# C compiled binaries and object files
+*.o
+a.out
+
+# Compiled executables (no extension, match source filenames)
+Lecture1_C/source_code/hello0
+Lecture1_C/source_code/hello1
+Lecture1_C/source_code/hello2
+Lecture1_C/source_code/mario0
+Lecture1_C/source_code/mario1
+Lecture1_C/source_code/mario2
+Lecture1_C/source_code/mario3
+Lecture1_C/source_code/mario4
+Lecture1_C/source_code/mario5
+Lecture1_C/source_code/calculator0
+Lecture1_C/source_code/calculator1
+Lecture1_C/source_code/calculator2
+Lecture1_C/source_code/calculator3
+Lecture1_C/source_code/calculator4
+Lecture1_C/source_code/calculator5
+Lecture1_C/source_code/calculator6
+Lecture1_C/source_code/agree0
+Lecture1_C/source_code/agree1
+Lecture1_C/source_code/agree2
+Lecture1_C/source_code/cat0
+Lecture1_C/source_code/cat1
+Lecture1_C/source_code/cat2
+Lecture1_C/source_code/cat3
+Lecture1_C/source_code/cat4
+Lecture1_C/source_code/cat5
+Lecture1_C/source_code/cat6
+Lecture1_C/source_code/cat7
+Lecture1_C/source_code/cat8
+Lecture1_C/source_code/cat9
+Lecture1_C/source_code/cat10
+Lecture1_C/source_code/cat11
+Lecture1_C/source_code/cat12
+Lecture1_C/source_code/cat13
+Lecture1_C/source_code/cat14
+Lecture1_C/source_code/cat15
+Lecture1_C/source_code/compare0
+Lecture1_C/source_code/compare1
+Lecture1_C/source_code/compare2
+Lecture1_C/source_code/compare3
