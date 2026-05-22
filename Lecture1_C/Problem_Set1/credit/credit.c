@@ -55,7 +55,7 @@ CardInfo luhn_algo(long card_num)
     int count = 0;
     int sum = 0;
 
-    CardInfo info;
+    CardInfo info = {0, 0, 0, 0};
 
     // Example : 4003600000000014
 
