@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-bool check_26_characters(string s);
+int check_26_characters(string s);
 char substitute(char c, string keys);
 
 int main(int argc, string argv[])
@@ -20,10 +20,15 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    bool check = check_26_characters(argv[1]);
-    if (!check)
+    int check = check_26_characters(argv[1]);
+    if (check == 1)
     {
         printf("Key must contain 26 characters.\n");
+        return 1;
+    }
+    else if (check == 2)
+    {
+        printf("Key must contain 26 characters exactly once.\n");
         return 1;
     }
 
@@ -39,7 +44,7 @@ int main(int argc, string argv[])
     printf("\n");
 }
 
-bool check_26_characters(string s)
+int check_26_characters(string s)
 {
     int key_table[26] = {0};
 
@@ -53,7 +58,7 @@ bool check_26_characters(string s)
             }
             else
             {
-                return false;
+                return 2;
             }
         }
         else if (islower((unsigned char) s[i]))
@@ -64,16 +69,16 @@ bool check_26_characters(string s)
             }
             else
             {
-                return false;
+                return 2;
             }
         }
         else
         {
-            return false;
+            return 1;
         }
     }
 
-    return true;
+    return 0;
 }
 
 char substitute(char c, string keys)
