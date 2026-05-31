@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: When the array is random, time is the largest, and when the array is sorted, time is low.
+
+sort2 uses: merge sort
+
+How do you know?: The time of random, sorted, reversed array are the smallest and also the same.
+
+sort3 uses: selection sort
+
+How do you know?: When the array is random, time is the largest, and when the array is sorted, time is also the largest.
